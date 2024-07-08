@@ -1,0 +1,84 @@
+.f-container{
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    padding: 0rem 1rem;
+
+    .f-left{
+        gap: 1rem;
+        padding: 2rem;
+        & span{
+            line-height: 2rem;
+        }
+    }
+
+    .f-menu{
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+        font-weight: 500;
+        font-size: 1.4rem;
+    }
+
+    .f-right{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+
+        .rs1{
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+        .rs2{
+            margin-bottom: 2rem;
+        }
+
+        .f-menu{
+            display: flex;
+            font-weight: 500;
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            padding-right:2rem;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .f-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding: 2rem; */
+        line-height: 2rem;
+        
+        & span{
+            padding: 1rem 3rem;
+            font-size: 1.7rem;
+            text-align: center;
+        }
+    }
+
+    .f-right{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: .6rem;
+
+        :nth-child(1){
+            font-size: 1.6rem;
+        }
+        :nth-child(2){
+            font-size: 2rem;
+        }
+    }
+    .f-menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem 3rem;
+        text-align: center;
+        flex-wrap: wrap;
+        & span{
+            font-size: 1.8rem;
+        }
+    }
+}

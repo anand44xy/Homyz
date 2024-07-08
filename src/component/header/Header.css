@@ -1,0 +1,77 @@
+/* stickey nav */
+.nav-bg-sticky{
+  transition: 400ms;
+  background-color: grey;
+  width: 100%;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+}
+/* when .sticky-nav class comes in body then  */
+.sticky-nav{
+  opacity: 1 !important;
+  visibility: visible;
+}
+.sticky-nav .h-container{
+  margin-top: 0px;
+  
+}
+/* ====================================== */
+.h-wrapper {
+  color: white;
+
+  .h-container {
+    position: relative;
+    top: 0;
+    justify-content: space-between;
+    padding: 1.5rem 1.8rem;
+    color: var(--secondary);
+    gap: 6rem;
+  }
+
+  .h-menu {
+    gap: 5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    .button a {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* ------- RWD ----------- */
+@media (max-width: 768px) {
+  .h-container {
+    width: 100%;
+    justify-content: space-between;
+    gap: 8rem !important;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .h-menu {
+    color: var(--black);
+    position: absolute;
+    top: 3rem;
+    right: -100%;
+    background-color: white;
+    flex-direction: column;
+    padding: 3rem;
+    z-index: 3;
+    align-items: flex-start;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease-in-out;
+
+    & a {
+      font-size: 1.4rem;
+    }
+  }
+}

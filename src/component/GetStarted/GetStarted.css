@@ -1,0 +1,67 @@
+.inner-container{
+    margin: auto;
+    width: 98%;
+    gap: 1.5rem;
+    background: #4161df;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    border: 6px solid #5d77d6;
+    line-height: 5rem;
+    
+    
+     .primaryText{
+        color: white;
+        font-weight: 600;
+        font-size: 3.3rem;
+        line-height: 3rem;
+    }
+
+      .secondaryText{
+        color: rgba(255, 255, 255, .587);
+        font-size: 1.3rem;
+        line-height: 2.2rem;
+    }
+
+     button{
+        background: #5a73d7;
+        border: 2px solid white;
+        box-sizing: var(--shadow);
+        border-radius: 10px;
+        padding: 1rem;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+        transition: all 300ms ease-in;
+
+        &:hover {
+            background: var(--blue-gradient);
+            color: white;
+            scale: 1.1;
+          }
+        
+    }
+    
+}
+
+@media (max-width: 700px) {
+  .inner-container{
+     width: 95%;
+
+     :nth-child(1){
+        font-size: 2.5rem;
+        line-height: 3rem;      
+     }
+     :nth-child(2){
+        font-size: 1.7rem;      
+     }
+     :nth-child(3){
+        padding: 1;
+     }
+     :nth-child(3) a{
+        font-size: 1.6rem; 
+     }
+
+     
+  }
+}
