@@ -1,6 +1,6 @@
 # Homyz - Responsive Real Estate Landing Page
 
-![Project Screenshot](./https://github.com/anand44xy/Homyz/blob/main/public/Screenshot%20(84).png)
+![Homyz](/https://github.com/anand44xy/Homyz/blob/main/public/Screenshot%20(84).png)
 
 ## Introduction
 
